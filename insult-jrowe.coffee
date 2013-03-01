@@ -28,3 +28,6 @@ module.exports = (robot) ->
     
   robot.hear /^jrowe(.*)i love fritzl/i, (msg) ->
     msg.reply "quiet or you're going in the cellar"    
+    
+  robot.hear /^jrowe(.*)beer(.*)/i, (msg) ->
+    msg.reply "can you fit the whole bottle up there?"    
