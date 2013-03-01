@@ -24,13 +24,13 @@ module.exports = (robot) ->
     msg.reply "Australia, isn't that where jrowe| is from?"
     
   robot.hear /.*gay.*/i, (msg) ->
-    if /jrowe/i.test(msg.message.user.name.toLowerCase())
+    if /jrowe/i.test(msg.message.user.name)
       msg.reply "pot, kettle, homosexual?"
     
   robot.hear /.*i love fritzl.*/i, (msg) ->
-    if /jrowe/i.test(msg.message.user.name.toLowerCase())
+    if /jrowe/i.test(msg.message.user.name)
       msg.reply "quiet or you're going in the cellar"    
     
   robot.hear /.*beer.*/i, (msg) ->
-    if /jrowe/i.test(msg.message.user.name.toLowerCase())
+    if /jrowe/i.test(msg.message.user.name)
       msg.reply "you can fit a beer bottle where?"    
