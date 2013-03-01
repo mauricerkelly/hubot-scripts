@@ -23,18 +23,22 @@ module.exports = (robot) ->
   robot.hear /australia/i, (msg) ->
     msg.reply "Australia, isn't that where jrowe| is from?"
     
-  robot.hear /.*gay.*/i, (msg) ->
+  robot.hear /gay/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
       msg.reply "pot, kettle, homosexual?"
     
-  robot.hear /.*i love fritzl.*/i, (msg) ->
+  robot.hear /i love fritzl/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
       msg.reply "quiet or you're going in the cellar"    
     
-  robot.hear /.*beer.*/i, (msg) ->
+  robot.hear /beer/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
       msg.reply "you can fit a beer bottle where?"    
       
-  robot.hear /.*skull.*fuck.*/i, (msg) ->
+  robot.hear /skull.*fuck/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
       msg.reply "i skull fucked your mother"        
+      
+  robot.hear /ripper|rippa/i, (msg) ->
+    if /jrowe/i.test(msg.message.user.name)
+      msg.reply "learn to speak english"        
