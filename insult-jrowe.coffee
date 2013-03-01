@@ -27,4 +27,4 @@ module.exports = (robot) ->
     msg.reply "pot, kettle, homosexual?"
     
   robot.hear /^jrowe(.*)i love fritzl/i, (msg) ->
-    msg.reply "jrowe|: quiet or you're going in the cellar"    
+    msg.reply "quiet or you're going in the cellar"    
