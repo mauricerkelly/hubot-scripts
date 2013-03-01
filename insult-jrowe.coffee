@@ -18,7 +18,7 @@ module.exports = (robot) ->
     msg.send "fuck you jrowe|"
 
   robot.hear /sheep/i, (msg) ->
-    msg.send "hopfully jrowe| doesn't try to fuck it"
+    msg.reply "hopfully jrowe| doesn't try to fuck it"
 
   robot.hear /australia/i, (msg) ->
     msg.reply "Australia, isn't that where jrowe| is from?"
