@@ -34,3 +34,7 @@ module.exports = (robot) ->
   robot.hear /.*beer.*/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
       msg.reply "you can fit a beer bottle where?"    
+      
+  robot.hear /.*skull.*fuck.*/i, (msg) ->
+    if /jrowe/i.test(msg.message.user.name)
+      msg.reply "i skull fucked your mother"        
