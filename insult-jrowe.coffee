@@ -30,4 +30,4 @@ module.exports = (robot) ->
     msg.reply "quiet or you're going in the cellar"    
     
   robot.hear /^jrowe(.*)beer(.*)/i, (msg) ->
-    msg.reply "can you fit the whole bottle up there?"    
+    msg.reply "you can fit the whole bottle up where?"    
