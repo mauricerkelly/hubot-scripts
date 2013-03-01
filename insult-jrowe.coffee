@@ -24,4 +24,7 @@ module.exports = (robot) ->
     msg.reply "Australia, isn't that where jrowe| is from?"
     
   robot.hear /^jrowe(.*)gay(.*)/i, (msg) ->
-    msg.reply "Pot, Kettle, Homosexual?"
+    msg.reply "pot, kettle, homosexual?"
+    
+  robot.hear /^jrowe(.*)i love fritzl/i, (msg) ->
+    msg.reply "jrowe|: quiet or you're going in the cellar"    
