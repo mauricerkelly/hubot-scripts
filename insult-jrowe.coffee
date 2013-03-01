@@ -22,3 +22,6 @@ module.exports = (robot) ->
 
   robot.hear /australia/i, (msg) ->
     msg.reply "Australia, isn't that where jrowe| is from?"
+    
+  robot.hear /^jrowe(.*)gay(.*)/i, (msg) ->
+    msg.reply "Pot, Kettle, Homosexual?"
