@@ -44,5 +44,5 @@ module.exports = (robot) ->
       msg.reply "Learn to speak english"    
       
   robot.enter (response) ->
-    #if /jrowe/i.test(msg.message.user.name)
-      msg.send "Oh look, it's Russell Crowe!!!"   
+    #if /jrowe/i.test(response.message.user.name)
+      response.send "Oh look, it's Russell Crowe!!!"   
