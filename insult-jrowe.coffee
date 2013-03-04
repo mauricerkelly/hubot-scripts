@@ -15,30 +15,34 @@
 module.exports = (robot) ->
 
   robot.hear /i blame jrowe/i, (msg) ->
-    msg.send "fuck you jrowe|"
+    msg.send "Fuck you jrowe|"
 
   robot.hear /sheep/i, (msg) ->
-    msg.reply "hopfully jrowe| doesn't try to fuck it"
+    msg.reply "Hopefully jrowe| doesn't try to fuck it"
 
   robot.hear /australia/i, (msg) ->
     msg.reply "Australia, isn't that where jrowe| is from?"
     
   robot.hear /gay/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
-      msg.reply "pot, kettle, homosexual?"
+      msg.reply "Pot, kettle, homosexual?"
     
   robot.hear /i love fritzl/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
-      msg.reply "quiet or you're going in the cellar"    
+      msg.reply "Quiet or you're going in the cellar"    
     
   robot.hear /beer/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
-      msg.reply "you can fit a beer bottle where?"    
+      msg.reply "You can fit a beer bottle where?"    
       
   robot.hear /skull.*fuck/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
-      msg.reply "i skull fucked your mother"        
+      msg.reply "I skull fucked your mother"        
       
   robot.hear /ripper|rippa/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
-      msg.reply "learn to speak english"        
+      msg.reply "Learn to speak english"    
+      
+  robot.enter (response) ->
+    #if /jrowe/i.test(msg.message.user.name)
+      msg.send "Oh look, it's Russell Crowe!!!"   
