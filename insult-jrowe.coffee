@@ -37,7 +37,11 @@ module.exports = (robot) ->
       
   robot.hear /skull.*fuck/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
-      msg.reply "I skull fucked your mother"        
+      msg.reply "I skull fucked your mother"   
+      
+  robot.hear /whore mouth/i, (msg) ->
+    if /jrowe/i.test(msg.message.user.name)
+      msg.reply "Your mother has a whore mouth"        
       
   robot.hear /ripper|rippa/i, (msg) ->
     if /jrowe/i.test(msg.message.user.name)
