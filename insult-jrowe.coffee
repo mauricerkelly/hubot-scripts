@@ -49,4 +49,4 @@ module.exports = (robot) ->
       
   robot.enter (response) ->
     if /jrowe/i.test(response.message.user.name)
-      response.send "Oh look, it's Russell Crowe!!!"   
+      response.send "Oh look, it's Russell Crowe...or is it Darren Lyons?"   
